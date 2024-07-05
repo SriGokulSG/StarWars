@@ -1,0 +1,14 @@
+.left{
+    background-color: white;
+    color: #15d173;
+    margin-right: 1%;
+    margin-top: 4%;
+    text-align: center;
+}
+.right{
+    background-color: white;
+    color: #15d173;
+    margin-top: 4%;
+    height:78vh;
+    overflow-y: scroll;
+}

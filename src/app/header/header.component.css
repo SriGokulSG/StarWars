@@ -1,0 +1,15 @@
+.navbar {
+    height: 100px !important; /*i assume your navbar size 100px*/
+}
+.title{
+    font-size: 50px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    margin-left: 5%;
+    letter-spacing: 2px;
+    color: white;
+}
+.smallTitle{
+    margin-right: 1%;
+    margin-top: 3%;
+    color: white;
+}

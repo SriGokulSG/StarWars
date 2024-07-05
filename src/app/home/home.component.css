@@ -1,0 +1,43 @@
+.left{
+    background-color: white;
+    color: #15d173;
+    margin-right: 1%;
+    margin-top: 4%;
+    text-align: center;
+    max-height: 78vh;
+    overflow-y: scroll;
+}
+.right{
+    background-color: white;
+    color: #15d173;
+    margin-top: 4%;
+}
+.filters{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: large;
+    background-color:  rgb(223, 217, 217);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.opened{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: large;
+    background-color:  #15d173;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.filterOptions{
+    margin-top: -10px;
+    background-color: rgb(223, 217, 217);
+    font-weight: 600;
+    font-size: large;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

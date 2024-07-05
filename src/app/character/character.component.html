@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 left">
+            <h3 style="margin-top: 10%;">
+                <img *ngIf="details.gender == 'female'" src="../../assets/characterIcon (2).png" height="100"
+                    width="100" style="border-radius: 100%;">
+                <img *ngIf="details.gender == 'male'" src="../../assets/characterIcon.png" height="100" width="100"
+                    style="border-radius: 100%;">
+                <img *ngIf="details.gender != 'male' && details.gender!='female'" src="../../assets/global_124470.png"
+                    height="100" width="100" style="border-radius: 100%;">
+            </h3>
+            <div style="text-align: left;color: grey;">
+                <b>Name : </b><label>{{details.name}}</label><br>
+                <b>Born : </b><label>{{details.birth_year}}</label><br>
+                <b>Height : </b><label>{{details.height}}</label><br>
+                <b>Weight : </b><label>{{details.mass}}</label><br>
+                <b>Created At : </b><label>{{details.created | date:'short'}}</label><br>
+                <b>Edited At : </b><label>{{details.edited | date:'short'}}</label><br>
+                <b>Hair Colour : </b><label>{{details.hair_color}}</label><br>
+                <b>Skin Colour : </b><label>{{details.skin_color}}</label><br><br>
+                <b>Planet Name : </b><label>{{details.homeworld}}</label><br><br>
+                <b>Species : </b><label>{{details.species}}</label><br>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-7 right">
+            <p style="font-size: x-large;"><b>Films</b></p>
+            <div class="card text-dark bg-light" style="margin-bottom: 10px;" *ngFor="let film of films">
+                <div class="card-body">
+                    <h5 class="card-title">{{film.title}}</h5>
+                    <p class="card-text"><b>Episode Number :</b>{{film.episode_id}}</p>
+                    <p class="card-text"><b>Release Date :</b>{{film.release_date}}</p>
+                    <p class="card-text"><b>Director :</b>{{film.director}}</p>
+                    <p class="card-text"><b>Producer :</b>{{film.producer}}</p>
+                </div>
+            </div>
+            <p style="font-size: x-large;"><b>Vehicles</b></p>
+            <div class="card text-dark bg-light" style="margin-bottom: 10px;" *ngFor="let vehicle of vehicles">
+                <div class="card-body">
+                    <h5 class="card-title">{{vehicle.name}}</h5>
+                    <p class="card-text"><b>Model :</b>{{vehicle.model}}</p>
+                    <p class="card-text"><b>Speed :</b>{{vehicle.max_atmosphering_speed}}</p>
+                    <p class="card-text"><b>Manufacturer :</b>{{vehicle.manufacturer}}</p>
+                </div>
+            </div>
+            <p style="font-size: x-large;"><b>Star Ships</b></p>
+            <div class="card text-dark bg-light" style="margin-bottom: 10px;" *ngFor="let vehicle of spaceships">
+                <div class="card-body">
+                    <h5 class="card-title">{{vehicle.name}}</h5>
+                    <p class="card-text"><b>Model :</b>{{vehicle.model}}</p>
+                    <p class="card-text"><b>Speed :</b>{{vehicle.max_atmosphering_speed}}</p>
+                    <p class="card-text"><b>Manufacturer :</b>{{vehicle.manufacturer}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
