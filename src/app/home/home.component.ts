@@ -230,7 +230,7 @@ export class HomeComponent {
     } else {
       this.filters.films.push(event.target.value)
     }
-    this.filterCharacters();
+    // this.filterCharacters();
   }
 
   speciesChange(event: any) {
@@ -241,7 +241,7 @@ export class HomeComponent {
     } else {
       this.filters.species.push(event.target.value)
     }
-    this.filterCharacters();
+    // this.filterCharacters();
   }
 
   vehicleChange(event: any) {
@@ -252,7 +252,7 @@ export class HomeComponent {
     } else {
       this.filters.vehicles.push(event.target.value)
     }
-    this.filterCharacters();
+    // this.filterCharacters();
   }
 
   starShipChange(event: any) {
@@ -263,7 +263,7 @@ export class HomeComponent {
     } else {
       this.filters.starships.push(event.target.value)
     }
-    this.filterCharacters();
+    // this.filterCharacters();
   }
 
   yearChange(event: any) {
@@ -274,7 +274,7 @@ export class HomeComponent {
     } else {
       this.filters.birth_year.push(event.target.value)
     }
-    this.filterCharacters();
+    // this.filterCharacters();
   }
   filterCharacters() {
     // console.log(this.filters)
