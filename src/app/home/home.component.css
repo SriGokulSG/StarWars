@@ -11,6 +11,7 @@
     background-color: white;
     color: #15d173;
     margin-top: 4%;
+    position: relative;
 }
 .filters{
     margin-top: 10px;

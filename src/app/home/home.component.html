@@ -75,7 +75,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="justify-content-end" style="float:right;">
+            <div class="justify-content-end" style="position: absolute;bottom: 10px;right: 10px;">
                 <button class="btn btn-success" style="margin-right: 2px;" *ngIf="page>1" (click)="(paginate(page-1))"><img src="../../assets/caret-left-fill.svg"></button>
                 <button class="btn btn-success" style="margin-right: 2px;" *ngIf="page>1">..</button>
                 <button [ngClass]="page != i ?'btn btn-success' : 'btn btn-secondary'" style="margin-right: 2px;" *ngFor="let i of currentNumber" (click)="paginate(i)">{{i}}</button>
